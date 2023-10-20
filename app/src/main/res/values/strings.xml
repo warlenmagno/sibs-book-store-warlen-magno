@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SIBS Book Store App</string>
+    <string name="txt_title">Book Title</string>
+    <string name="txt_movie_description">Description of book</string>
+    <string name="txt_summary">Summary</string>
+    <string name="txt_release_date">Author: %1$s</string>
+    <string name="txt_duration">Duration : %1$s</string>
+    <string name="txt_book">Buy Book</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_retry">Retry</string>
+    <string name="txt_cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

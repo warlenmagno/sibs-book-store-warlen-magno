@@ -1,0 +1,2 @@
+com/sibsBookStore/data/test/BuildConfig.java
+ com.sibsBookStore.data.test.BuildConfig

@@ -1,0 +1,10 @@
+#Fri Oct 20 19:24:31 BRT 2023
+base.2=/home/warlen/Projects/work/sibs/sibs-book-store-warlen-magno/domain/build/intermediates/dex/debugAndroidTest/mergeLibDexDebugAndroidTest/classes_0.dex
+path.2=classes_0.dex
+base.1=/home/warlen/Projects/work/sibs/sibs-book-store-warlen-magno/domain/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/classes.dex
+path.1=classes.dex
+base.0=/home/warlen/Projects/work/sibs/sibs-book-store-warlen-magno/domain/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

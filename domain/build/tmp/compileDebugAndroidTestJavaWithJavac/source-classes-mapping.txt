@@ -1,0 +1,2 @@
+com/sibsBookStore/domain/test/BuildConfig.java
+ com.sibsBookStore.domain.test.BuildConfig

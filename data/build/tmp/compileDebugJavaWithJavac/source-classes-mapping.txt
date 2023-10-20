@@ -1,0 +1,18 @@
+com/sibsBookStore/data/BuildConfig.java
+ com.sibsBookStore.data.BuildConfig
+com/sibsBookStore/data/NetworkModule_ProvideMoshiFactory.java
+ com.sibsBookStore.data.NetworkModule_ProvideMoshiFactory
+com/sibsBookStore/data/NetworkModule_ProvideRxJava2CallAdapterFactory.java
+ com.sibsBookStore.data.NetworkModule_ProvideRxJava2CallAdapterFactory
+com/sibsBookStore/data/NetworkModule_GetHttpLoggingInterceptorFactory.java
+ com.sibsBookStore.data.NetworkModule_GetHttpLoggingInterceptorFactory
+com/sibsBookStore/data/NetworkModule_ProvideOkHttpClientFactory.java
+ com.sibsBookStore.data.NetworkModule_ProvideOkHttpClientFactory
+com/sibsBookStore/data/NetworkModule_ProvideAudioBookServiceApiFactory.java
+ com.sibsBookStore.data.NetworkModule_ProvideAudioBookServiceApiFactory
+com/sibsBookStore/data/NetworkModule_ProvideRetrofitFactory.java
+ com.sibsBookStore.data.NetworkModule_ProvideRetrofitFactory
+com/sibsBookStore/data/NetworkModule_ProvideMoshiConverterFactoryFactory.java
+ com.sibsBookStore.data.NetworkModule_ProvideMoshiConverterFactoryFactory
+com/sibsBookStore/data/NetworkModule_GetUrlFactory.java
+ com.sibsBookStore.data.NetworkModule_GetUrlFactory
