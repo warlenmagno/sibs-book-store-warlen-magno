@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<!--        <variable-->
-<!--            name="item"-->
-<!--            type="com.mudassir.moviesapp.model.Movie" />-->
         <variable
             name="item"
             type="com.sibsBookStore.warlenMagnoApp.model.Book" />
@@ -17,7 +14,7 @@
     </data>
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/ly_movie_item"
+            android:id="@+id/ly_book_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/black"

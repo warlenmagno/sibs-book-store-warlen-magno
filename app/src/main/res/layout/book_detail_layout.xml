@@ -19,11 +19,11 @@
 
     <ImageView
         android:id="@+id/iv_cover"
-        loadImage="@{viewModel.movieDetail.posterPath}"
+        loadImage="@{viewModel.bookDetail.posterPath}"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_108sdp"
         android:adjustViewBounds="true"
-        android:contentDescription="@string/txt_movie_description"
+        android:contentDescription="@string/txt_book_description"
         android:scaleType="fitXY"
         android:paddingEnd="@dimen/_4sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="start"
-        android:text="@{viewModel.movieDetail.title}"
+        android:text="@{viewModel.bookDetail.title}"
         android:textColor="@color/white"
         android:textSize="@dimen/_16sdp"
         app:layout_constraintEnd_toStartOf="@+id/gl_end"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_8sdp"
         android:gravity="start"
-        android:text="@{viewModel.movieDetail.author}"
+        android:text="@{viewModel.bookDetail.author}"
         android:textColor="@color/white"
         android:textSize="@dimen/_12sdp"
         app:layout_constraintEnd_toStartOf="@+id/gl_end"
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginTop="@dimen/_8sdp"
-        android:rating="@{viewModel.movieDetail.voteAverage}"
+        android:rating="@{viewModel.bookDetail.voteAverage}"
         app:layout_constraintEnd_toStartOf="@+id/gl_end"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/iv_cover"
@@ -80,7 +80,7 @@
 
     <TextView
         android:id="@+id/tv_duration"
-        time="@{viewModel.movieDetail.runtime}"
+        time="@{viewModel.bookDetail.runtime}"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_4sdp"
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_release_date" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_book_movie"
+        android:id="@+id/btn_buy_book"
         android:layout_width="0dp"
         android:layout_height="@dimen/_30sdp"
         android:background="@color/colorPrimary"
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/barrier"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="btn_book_movie,tv_duration,rb_review"
+        app:constraint_referenced_ids="btn_buy_book,tv_duration,rb_review"
         />
 
     <TextView
@@ -133,13 +133,13 @@
         style="@style/subTextTitleStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@{viewModel.movieDetail.overview}"
+        android:text="@{viewModel.bookDetail.overview}"
         android:layout_marginTop="@dimen/_8sdp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/gl_end"
         app:layout_constraintStart_toStartOf="@id/gl_start"
         app:layout_constraintTop_toBottomOf="@+id/tv_summary"
-        tools:text="@string/txt_movie_description" />
+        tools:text="@string/txt_book_description" />
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="match_parent"

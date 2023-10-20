@@ -9,12 +9,12 @@ import javax.inject.Inject
 class BookDetailViewModel @Inject constructor(): BaseViewModel() {
 
     val bookId = MutableLiveData("")
-    private var _movieDetail = MutableLiveData<BookDetailModel>()
-    val movieDetail: LiveData<BookDetailModel> = _movieDetail
+    private var _bookDetail = MutableLiveData<BookDetailModel>()
+    val bookDetail: LiveData<BookDetailModel> = _bookDetail
 
     fun bookDetail(book: Book) {
         _loading.postValue(true)
-        _movieDetail.postValue(
+        _bookDetail.postValue(
             BookDetailModel(
                 posterPath = book.posterPath,
                 title = book.title,

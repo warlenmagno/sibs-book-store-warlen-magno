@@ -42,7 +42,7 @@ class BookListAdapter : PagingDataAdapter<Book, BookListAdapter.ViewHolder>(COMP
             binding.apply {
                 palette = txtTitle
                 binding.item = book
-                lyMovieItem.setOnClickListener {
+                lyBookItem.setOnClickListener {
                     callbacks?.onBookItemClick(it, book)
                 }
                 executePendingBindings()

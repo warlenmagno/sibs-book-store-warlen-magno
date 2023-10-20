@@ -1,9 +1,5 @@
 package com.sibsBookStore.data.util
 
-//import com.sibsBookStore.data.remote.model.MovieModel
-//import com.sibsBookStore.data.remote.model.mapToDomain
-//import com.sibsBookStore.domain.entity.MovieEntity
-
 abstract class BaseMapper<T, K> {
 
     abstract fun transformFrom(source: K): T
@@ -16,9 +12,6 @@ abstract class BaseMapper<T, K> {
     fun transformToList(source: List<T>): List<K> {
         return source.map { src -> transformTo(src) }
     }
-
-//    fun List<MovieModel>.mapLisToDomain() : List<MovieEntity>
-//            = map { it.mapToDomain() }
 
     fun toList(source: List<T>):List<K> = source.map { src -> transformTo(src) }
 

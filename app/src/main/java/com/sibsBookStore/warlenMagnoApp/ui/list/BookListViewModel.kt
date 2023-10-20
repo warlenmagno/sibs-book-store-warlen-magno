@@ -30,11 +30,11 @@ class BookListViewModel @Inject constructor(private val getBookListUseCase: GetB
         result.subscribeBy(onNext = {
             _loading.postValue(false)
             _bookList.postValue(it)
-            Timber.d { "movie list api response $it" }
+            Timber.d { "book list api response $it" }
         }, onError = { e ->
             _loading.postValue(false)
             _error.postValue(e.localizedMessage ?: e.message ?: "Unknown error")
-            Timber.e { "error on movie list api ${e.printStackTrace()}" }
+            Timber.e { "error on book list api ${e.printStackTrace()}" }
         }, onComplete = {
             _loading.postValue(false)
         }).addTo(compositeDisposable)

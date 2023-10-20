@@ -51,7 +51,6 @@ class BookListFragment : Fragment(), BookListAdapter.Callbacks {
             ViewModelProvider(this, this.viewModelFactory).get(BookListViewModel::class.java)
         mBinding.viewModel = viewModel
         mBinding.lifecycleOwner = this
-//        viewModel.getMovieList()
         viewModel.getBookList()
 
         observeEvents()
@@ -66,7 +65,6 @@ class BookListFragment : Fragment(), BookListAdapter.Callbacks {
         })
 
         viewModel.bookList.observe(viewLifecycleOwner, Observer {
-
             mAdapter.submitData(lifecycle, it)
 
         })
@@ -75,8 +73,8 @@ class BookListFragment : Fragment(), BookListAdapter.Callbacks {
 
     private fun setupForAdapter() {
         mAdapter.setupListener(this)
-        mBinding.rvMovies.adapter = mAdapter
-        mBinding.rvMovies.adapter = mAdapter.withLoadStateFooter(
+        mBinding.rvBooks.adapter = mAdapter
+        mBinding.rvBooks.adapter = mAdapter.withLoadStateFooter(
             footer = LoadingGridStateAdapter()
         )
         mAdapter.addLoadStateListener { loadState ->
@@ -104,7 +102,7 @@ class BookListFragment : Fragment(), BookListAdapter.Callbacks {
 
 
     override fun onBookItemClick(view: View, item: Book) {
-        Timber.d { "clicked on movie" }
+        Timber.d { "clicked on book" }
         val bundle = Bundle()
         bundle.putParcelable(AppConstants.BOOK_ARGU, item)
         findNavController().navigate(R.id.action_bookListFragment_to_bookDetailFragment, bundle)

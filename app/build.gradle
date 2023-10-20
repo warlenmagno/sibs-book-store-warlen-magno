@@ -10,7 +10,6 @@ android {
     compileSdkVersion App.compileSdk
     buildToolsVersion App.buildToolVersion
         defaultConfig {
-            applicationId "com.mudassir.moviesapp"
             minSdkVersion App.minSdk
             targetSdkVersion App.targetSdk
             versionCode App.versionCode

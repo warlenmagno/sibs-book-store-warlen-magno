@@ -1,4 +1,4 @@
-# Movies-App
+# SIBS BookStore App
 
 ### Structure of the code ###
 Simple Android Application written in Kotlin.

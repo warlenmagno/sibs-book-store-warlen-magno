@@ -53,18 +53,18 @@ class BookDetailFragment : Fragment() {
         mBinding.lifecycleOwner = this
         viewModel.bookId.value = book.id
         viewModel.bookDetail(book)
-        mBinding.lyMovieDetail.btnBookMovie.isVisible = book.buyPath?.isEmpty() == false
+        mBinding.lyBookDetail.btnBuyBook.isVisible = book.buyPath?.isEmpty() == false
         //TODO change it later
-        mBinding.lyMovieDetail.btnBookMovie.setOnClickListener {
-            clickOnBookMovie()
+        mBinding.lyBookDetail.btnBuyBook.setOnClickListener {
+            clickOnBuyBook()
         }
     }
 
 
-    private fun clickOnBookMovie(){
+    private fun clickOnBuyBook(){
         val bundle = Bundle()
         bundle.putString(AppConstants.URL_ARGU, book.buyPath)
-        findNavController().navigate(R.id.action_movieDetailFragment_to_webViewFragment, bundle)
+        findNavController().navigate(R.id.action_bookDetailFragment_to_webViewFragment, bundle)
     }
 
 }
