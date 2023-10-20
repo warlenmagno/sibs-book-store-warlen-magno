@@ -29,11 +29,11 @@ This project follows Clean Architecture with MVVM with Clean Architecture Design
 
 
 # Architecture Design
-![alt text](https://github.com/mookyjan/MoviesApp/blob/main/diagram/clean%20architecture%20design.png)
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/diagram/clean%20architecture%20design.png)
 
-![alt text](https://github.com/mookyjan/MoviesApp/blob/main/diagram/clean-mvvm.png)
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/diagram/clean-mvvm.png)
 
-![alt text](https://github.com/mookyjan/MoviesApp/blob/main/diagram/project%20structure.png)
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/diagram/project%20structure.png)
 
 
 # Modules
@@ -57,17 +57,20 @@ comments are written with the function that what it will do.
 also TODO are given in the area which we can improve more.
 
 # Screenshots
-![alt text](https://github.com/mookyjan/MoviesApp/blob/main/screenshots/device-2020-11-22-184042.png)
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/screenshots/Screenshot%20from%202023-10-20%2017-39-26.png)
 
-![alt text](https://github.com/mookyjan/MoviesApp/blob/main/screenshots/device-2020-11-23-073954.png)
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/screenshots/Screenshot%20from%202023-10-20%2017-40-03.png)
 
-![alt text](https://github.com/mookyjan/MoviesApp/blob/main/screenshots/device-2020-11-23-081505.png)
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/screenshots/Screenshot%20from%202023-10-20%2017-41-02.png)
 
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/screenshots/Screenshot%20from%202023-10-20%2017-41-08.png)
+
+![alt text](https://github.com/warlenmagno/sibs-book-store-warlen-magno/blob/ef08cb8e98109a4e926dadfd9ac56883e346a35a/screenshots/Screenshot%20from%202023-10-20%2017-40-13.png)
 
 ##TODO
 
 setup for room db for offline storage of data
-adding more filter option for the movie list
+adding more filter option for the book list
 adding more unit test cases
 setup for CI/CD
 improving the design
