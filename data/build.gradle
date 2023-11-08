@@ -15,6 +15,16 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+        externalNativeBuild {
+            cmake {
+                arguments("-DFLAVOR=src/main/jni/sibs-native-lib.cpp")
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake { path = file("CMakeLists.txt") }
     }
 
     buildTypes {
@@ -71,6 +81,10 @@ dependencies {
 
     implementation Libs.PAGING
     implementation Libs.RXPAGING
+
+//    implementation("com.android.ndk.thirdparty:curl:7.85.0-beta-1")
+//    implementation("com.android.ndk.thirdparty:jsoncpp:1.9.5-beta-1")
+//    implementation("com.android.ndk.thirdparty:openssl:1.1.1q-beta-1")
 
     testImplementation TestLibs.JUNIT
     testImplementation TestLibs.MOCKITO
