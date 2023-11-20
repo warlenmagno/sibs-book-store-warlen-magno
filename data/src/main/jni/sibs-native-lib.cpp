@@ -37,15 +37,31 @@ Java_com_sibsBookStore_data_jni_SibsAPI_searchBooks(JNIEnv *env, jobject thiz, j
         // É configurado um callback personalizado para tratar os dados recebidos durante a chamada HTTP.
         // O callback aloca memória dinamicamente para armazenar os dados recebidos.
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, [](char* ptr, size_t size, size_t nmemb, MemoryStruct* mem) -> size_t {
+
+            // Calcula o tamanho real dos dados recebidos multiplicando o tamanho de cada elemento (size) pelo número de elementos (nmemb).
             size_t realsize = size * nmemb;
+
+            //Realoca a memória para acomodar os dados recebidos. Isso é feito usando realloc para expandir a área de memória previamente alocada para mem->memory.
+            // A função adiciona realsize + 1 bytes à memória existente.
             mem->memory = (char*)realloc(mem->memory, mem->size + realsize + 1);
+
+            //Verifica se a realocação da memória foi bem-sucedida.
+            // Se a memória não pôde ser alocada (retorno de realloc igual a NULL), a função retorna 0 para indicar um erro.
             if (mem->memory == NULL) {
                 // // Fora da memória!
                 return 0;
             }
+            //Copia os dados recebidos (ptr) para a área recém-alocada da memória.
             memcpy(&(mem->memory[mem->size]), ptr, realsize);
+
+            //Atualiza o tamanho total dos dados armazenados na estrutura MemoryStruct.
             mem->size += realsize;
+
+            // Adiciona um caractere nulo ao final dos dados armazenados, garantindo que a string
+            // seja terminada corretamente.
             mem->memory[mem->size] = 0;
+
+            // Retorna o tamanho real dos dados recebidos. Isso informa à biblioteca libcurl quanta quantidade de dados foi manipulada pela função de escrita.
             return realsize;
         });
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
